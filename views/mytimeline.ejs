@@ -1,0 +1,9 @@
+<%- include("partials/header") %>
+<main>
+    <form class="mytimelineform" action="/createpost" method="post">
+        <label for="post"><%= loggedInProfile.name %>'s bericht:</label>
+        <input type="text" id="post" name="post" placeholder="Nieuw bericht">
+        <input type="submit" value="Bericht plaatsen">
+    </form>
+</main>
+<%- include("partials/footer") %>

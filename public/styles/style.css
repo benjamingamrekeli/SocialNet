@@ -1,0 +1,97 @@
+header{
+    display: grid;
+    background-color: greenyellow;
+    grid-template-areas: "logo nav";
+    justify-content: left;
+    column-gap: 100px;
+    padding: 20px;
+}
+
+header > h1 {
+    color: green;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav > a{
+    text-decoration: none;
+    color:green;
+    font-size: medium;
+    padding: 10px;
+}
+
+#profiles{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#timeline{
+    display: flex;
+    flex-direction: column;
+}
+
+#timeline > h2 {
+    color:orangered;
+}
+
+#timeline > article {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    border: 3px solid green;
+    padding: 15px;
+    border-radius: 5px;
+    width: 60vw;
+    margin-left: 2vw;
+    margin-top: 2vw;
+}
+
+.profilebox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: greenyellow;
+    border: 3px solid green;
+    padding: 15px;
+    border-radius: 5px;
+    width: 20vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
+
+.profileboxfriend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: yellow;
+    border: 3px solid blueviolet;
+    padding: 15px;
+    border-radius: 5px;
+    width: 20vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
+
+.profileboxpicture{
+    width: 60%;
+}
+
+.myprofileform{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.myprofileform > *{
+    display: block;
+    padding: 20px;
+}
+
+.mytimelineform {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}

@@ -1,0 +1,11 @@
+<%- include("partials/header") %>
+<main id="timeline">
+    <% for (let profile of profiles) { %>
+        <% for (let post of profile.posts) { %>
+        <article>
+            <h2><%= profile.name %>'s bericht</h2>
+            <p><%= post %></p>
+        </article>
+    <% }} %>
+</main>
+<%- include("partials/footer") %>
