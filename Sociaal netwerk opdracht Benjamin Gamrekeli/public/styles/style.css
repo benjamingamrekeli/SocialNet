@@ -1,13 +1,13 @@
 header{
     display: grid;
     background-color: greenyellow;
-    grid-template-areas: "logo nav logout";
-    justify-content: space-between;
-    align-items: baseline;
+    grid-template-areas: "logo nav";
+    justify-content: left;
+    column-gap: 100px;
     padding: 20px;
 }
 
-h1 {
+header > h1 {
     color: green;
 }
 
@@ -108,30 +108,4 @@ nav > a{
 #submit {
     display: block;
     width: 30%;
-}
-
-.loginform {
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-}
-
-.loginform > * {
-    margin: 20px;
-}
-
-.loginsucces {
-    margin: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: green;
-    color: white;
-}
-
-.loginfail {
-    margin: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgb(255, 94, 94);
-    color: black;
 }

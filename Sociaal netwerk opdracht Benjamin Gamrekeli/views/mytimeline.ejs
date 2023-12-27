@@ -6,12 +6,12 @@
         <input type="submit" id="submit" value="Bericht plaatsen">
     </form>
     <div id="timeline">
-        <% loggedInProfile.posts.forEach(post => { %>
-            <article>
-                <h2><%= loggedInProfile.name %>'s bericht</h2>
-                <p><%= post %></p>
-            </article>
-        <% }); %>
+        <% for (let post of loggedInProfile.posts) { %>
+        <article>
+            <h2><%= loggedInProfile.name %>'s bericht</h2>
+            <p><%= post %></p>
+        </article>
+        <% } %>
     </div>
 </main>
 <%- include("partials/footer") %>
