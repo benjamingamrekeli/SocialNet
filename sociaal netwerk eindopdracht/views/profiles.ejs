@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+    <main id="profiles">
+        <% profiles.forEach(profile => { %>
+            <% if (friends.includes(profile.USER_ID)) { %>
+                <div class="profileboxfriend">
+                    <h3>FRIEND</h3>
+                    <img class="profileboxpicture" src="<%= profile.picture %>">
+                    <p><%= profile.name %></p>
+                    <form action="/addfriend" method="post">
+                        <input type="hidden" name="USER_ID" value="<%= profile.USER_ID %>">
+                        <input type="submit" value="Vriend toevoegen">
+                    </form>
+                </div>
+            <% } else { %>
+                <div class="profilebox">
+                    <img class="profileboxpicture" src="<%= profile.picture %>">
+                    <p><%= profile.name %></p>
+                    <form action="/addfriend" method="post">
+                        <input type="hidden" name="USER_ID" value="<%= profile.USER_ID %>">
+                        <input type="submit" value="Vriend toevoegen">
+                    </form>
+                </div>
+            <% } %>
+        <% }); %>
+    </main>
+<%- include("partials/footer") %>

@@ -1,0 +1,137 @@
+header{
+    display: grid;
+    background-color: greenyellow;
+    grid-template-areas: "logo nav logout";
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px;
+}
+
+h1 {
+    color: green;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav > a{
+    text-decoration: none;
+    color:green;
+    font-size: medium;
+    padding: 10px;
+}
+
+#profiles{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#timeline{
+    display: flex;
+    flex-direction: column;
+}
+
+#timeline > h2 {
+    color:orangered;
+}
+
+#timeline > article {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    border: 3px solid green;
+    padding: 15px;
+    border-radius: 5px;
+    width: 60vw;
+    margin-left: 2vw;
+    margin-top: 2vw;
+}
+
+.profilebox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: greenyellow;
+    border: 3px solid green;
+    padding: 15px;
+    border-radius: 5px;
+    width: 20vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
+
+.profileboxfriend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: yellow;
+    border: 3px solid blueviolet;
+    padding: 15px;
+    border-radius: 5px;
+    width: 20vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
+
+.profileboxpicture{
+    width: 60%;
+}
+
+.myprofileform{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.myprofileform > *{
+    display: block;
+    padding: 20px;
+}
+
+.mytimelineform {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.mytimelineform > * {
+    margin: 20px;
+}
+
+#post {
+    display: block;
+    padding: 15px;
+}
+
+#submit {
+    display: block;
+    width: 30%;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.loginform > * {
+    margin: 20px;
+}
+
+.loginsucces {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+.loginfail {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 94, 94);
+    color: black;
+}

@@ -1,0 +1,17 @@
+<%- include("partials/header") %>
+<main>
+    <form class="mytimelineform" action="/createpost" method="post">
+        <label for="post"><%= loggedInProfile.name %>'s bericht:</label>
+        <input type="text" id="post" name="post" placeholder="Nieuw bericht">
+        <input type="submit" id="submit" value="Bericht plaatsen">
+    </form>
+    <div id="timeline">
+        <% loggedInProfile.posts.forEach(post => { %>
+            <article>
+                <h2><%= loggedInProfile.name %>'s bericht</h2>
+                <p><%= post %></p>
+            </article>
+        <% }); %>
+    </div>
+</main>
+<%- include("partials/footer") %>

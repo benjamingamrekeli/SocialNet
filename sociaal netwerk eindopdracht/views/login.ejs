@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+<main>
+    <% if (locals.message) { %>
+        <div class="loginfail">Login mislukt, probeer opnieuw.</div>
+    <% } %>
+    <div></div>
+    <h3>Welkom op SocialNet! Gelieve aan te melden: </h3>
+    <form class="loginform" action="/login" method="post">
+        <input type="text" id="name" name="name" placeholder="Naam">
+        <input type="text" id="password" name="password" placeholder="Wachtwoord">
+        <input type="submit" value="Aanmelden">
+    </form>
+</main>
+<%- include("partials/footer") %>

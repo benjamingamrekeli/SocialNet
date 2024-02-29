@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+    <main>
+        <form class="myprofileform" action="/updateprofile" method="post">
+            <label>Naam: <%= loggedInProfile.name %></label>
+            <label>E-mail adress: <%= loggedInProfile.email %></label>
+            <img class="profileboxpicture" src="<%= loggedInProfile.picture %>" alt="Profile picture">
+            <label for="description">Korte omscrhijving: <%= loggedInProfile.description %></label>
+            <input type="text" id="description" name="description" placeholder="Nieuwe omscrhijving">
+            <input type="submit" value="Wijzigingen opslaan">
+        </form>
+    </main>
+<%- include("partials/footer") %>

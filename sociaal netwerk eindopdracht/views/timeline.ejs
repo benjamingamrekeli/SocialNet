@@ -1,0 +1,16 @@
+<%- include("partials/header") %>
+<main id="timeline">
+    <% if (locals.loggedInProfile) {%>
+        <div class="loginsucces">Succesvol ingelogd als <%= loggedInProfile.name %></div>
+    <% } %>
+
+    <% profiles.forEach(profile => { %>
+        <% profile.posts.forEach(post => { %>
+            <article>
+                <h2><%= profile.name %>'s bericht</h2>
+                <p><%= post %></p>
+            </article>
+        <% }); %>
+    <% }); %>
+</main>
+<%- include("partials/footer") %>
